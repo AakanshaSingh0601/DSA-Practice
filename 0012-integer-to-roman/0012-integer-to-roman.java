@@ -4,7 +4,7 @@ class Solution {
     String[] roman ={"I","IV","V","IX","X","XL","L","XC","C","CD","D","CM","M"};
     StringBuilder sb = new StringBuilder();
 
-    for(int i = values.length-1; i>=0 && num>0 ; i--){
+    for(int i = values.length-1; i>=0  ; i--){
         while(num >=values[i]){
             num -= values[i];
             sb.append(roman[i]);
