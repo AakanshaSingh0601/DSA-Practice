@@ -10,15 +10,12 @@ class Solution {
                 sb.deleteCharAt(i);
                 if (i >= 1) {
                     i -= 2;
-                } else if (i == 0) {
+                } 
+                else if (i == 0) 
                     i--;
-                }
             }
         }
-
-        String result = sb.toString();
-
-        return result;
+        return sb.toString();
 
     }
 }
