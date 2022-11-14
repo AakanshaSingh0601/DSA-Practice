@@ -6,8 +6,6 @@ class Solution {
         }
         return ans;
     }
-    
-    
     private int countOnes(int n){
         String bin = Integer.toBinaryString(n);
         int count = 0;
