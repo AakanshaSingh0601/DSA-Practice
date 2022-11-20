@@ -19,15 +19,17 @@ class Solution {
                 nums.add(matrix[i][right]);
             } 
             right--;
-                for(int i =right; i>=left && nums.size()<size; i--){
+            for(int i= right; i>=left && nums.size() <size;i--){
                 nums.add(matrix[bottom][i]);
             }
             bottom--;
-                for(int i=bottom; i>= top&& nums.size()<size;i--){
-                 nums.add(matrix[i][left]) ;  
-                }
+            for(int i=bottom; i>=top && nums.size() <size ; i--){
+                nums.add(matrix[i][left]);
+            }
             left++;
+            
         }
         return nums;
+        
     }
 }
