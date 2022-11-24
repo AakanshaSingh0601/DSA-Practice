@@ -1,6 +1,6 @@
 class Solution {
     public int countPoints(String rings) {
-        //int[] arr = new int[10];
+        
         HashSet<Character>[] setArr = new HashSet[10];
         for(int i = 0; i<10; i++){
             setArr[i] = new HashSet<Character>();
