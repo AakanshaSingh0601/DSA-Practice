@@ -6,7 +6,7 @@ class Solution {
         {
        map.put(i,map.getOrDefault(i,0)+1);
         }
-        for(int i=0; i<=nums.length;i++){
+        for(int i=0; i<=nums.length;++i){
             if(map.containsKey(i)){
                 if(map.get(i)==2)
                rep=i; 
