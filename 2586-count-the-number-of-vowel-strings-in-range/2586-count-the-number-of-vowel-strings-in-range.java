@@ -2,7 +2,7 @@ class Solution {
     public int vowelStrings(String[] words, int left, int right) {
         
         int count = 0;
-        Set<Character> mySet = new HashSet<>();
+        HashSet<Character> mySet = new HashSet<>();
         mySet.add('a');
         mySet.add('e');
         mySet.add('i');
