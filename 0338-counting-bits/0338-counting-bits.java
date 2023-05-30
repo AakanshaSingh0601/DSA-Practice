@@ -1,17 +1,14 @@
 class Solution {
     public int[] countBits(int n) {
-        int[] ans =new int[n+1];
-        for(int i = 0; i<=n; i++){
-            ans[i] = countOnes(i);
+     int arr[] = new int[n+1];
+        for(int i=0;i<=n;i++){
+            String str= Integer.toBinaryString(i);
+            int count=0;
+            for(char c:str.toCharArray()){
+                if(c=='1') count++;
+            }
+            arr[i]= count;
         }
-        return ans;
-    }
-    private int countOnes(int n){
-        String bin = Integer.toBinaryString(n);
-        int count = 0;
-        for(char c: bin.toCharArray())
-            if(c=='1')
-                count++;
-        return count;
+        return arr;
     }
 }
