@@ -4,7 +4,7 @@ class Solution {
         
         for(char c: s.toCharArray()){
             if(!set.add(c)) return c;
-            else set.add(c);
+            //else set.add(c);
         }
         return 'a';
     }
