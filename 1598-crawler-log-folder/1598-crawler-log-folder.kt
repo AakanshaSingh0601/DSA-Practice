@@ -9,9 +9,8 @@ class Solution {
             }
             else if(op=="./")
                 continue
-            else{
-                st.add(op)
-            }
+            
+            else st.add(op)
         }
         return st.size
     }
