@@ -19,6 +19,3 @@ class Solution {
 // i-1 < i> j
 
 
-// if (previous < nums[i] && nums[i] > nums[i + 1] || previous > nums[i] && nums[i] < nums[i + 1]) {
-//                 previous = nums[i];
-//                 countHillValley++;
