@@ -1,22 +1,17 @@
 class Solution {
     public int firstUniqChar(String s) {
-     HashMap<Character, Integer> map = new HashMap<>();
-        for(int i =0; i<s.length(); i++){
-            char current =s.charAt(i);
-            if(!map.containsKey(current)){
-                map.put(current,i);
-                }
-            else{
-                map.put(current,-1);
-            }
+        HashMap<Character, ArrayList<Integer>> map = new HashMap<>();
+        int i =0;
+        for(char c: s.toCharArray()){
+            if(!map.containsKey(c)) map.put(c, new ArrayList<Integer>());
+            map.get(c).add(i);
+            i++;
         }
-            int min = Integer.MAX_VALUE;
-            for(char c :map.keySet()){
-                if(map.get(c) > -1 && map.get(c) < min){
-                     min =map.get(c);
-            }           
+        i = 0;
+        for(char c: s.toCharArray()){
+            if(map.get(c).size()==1) return i;
+            i++;
         }
-        return min== Integer.MAX_VALUE ? -1: min;
-        
+        return -1;
     }
 }
